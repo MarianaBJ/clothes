@@ -1,4 +1,3 @@
-import './components/categories/categories.styles.scss'
 import React from 'react';
 import Directory from './components/directory/directory.component';
 import categories from './components/categories/categories';
