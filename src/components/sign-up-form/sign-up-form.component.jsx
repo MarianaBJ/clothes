@@ -4,6 +4,7 @@ import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth } from "
 
 import FormInput from "../form-input/form-input.component"
 import Button from "../button/button.component"
+
 import './sign-up-form.styles.scss'
 
 
@@ -19,8 +20,6 @@ const SignUpForm = () => {
 
     const [formFields, setFormFields] = useState(initilValues)
     const { displayName, email, password, confirmPassowrd } = formFields
-
-    console.log(formFields)
 
 
     const resetFormFields = () => {
@@ -49,7 +48,7 @@ const SignUpForm = () => {
                 console.log('error user creation', error)
             }
         }
-    }
+    };
 
     const handleChange = (e) => {
         const { name, value } = e.target
